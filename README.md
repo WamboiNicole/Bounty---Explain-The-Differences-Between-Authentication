@@ -105,7 +105,7 @@ document.getElementById("delete-user-form").addEventListener("submit", async (ev
     }
 });
 ```
-
+```
 ### 5. Exporting the Router
 - **Purpose:** Finally, the `router` is exported so it can be used in the main application. This allows the routes defined in this file to be recognized and handled by the Express.js application.
 
