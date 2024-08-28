@@ -128,6 +128,4 @@ Separating these two concepts is crucial for maintaining security within applica
 
 To visualize the process of user deletion after authentication and authorization checks, see the diagram below:
 
-![Activity Diagram](./image.png)
-
-
+![Activity Diagram](./Image.png)
