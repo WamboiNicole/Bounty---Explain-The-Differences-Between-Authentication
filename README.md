@@ -111,6 +111,30 @@ document.getElementById("delete-user-form").addEventListener("submit", async (ev
 
 ```javascript
 module.exports = router;
+
+
+### **Step 2: Challenge Part 2**
+
+In the second challenge, we need to evaluate whether the requirement “This delete user functionality can be done after authentication” is a good idea or a bad idea based on our understanding of authentication and authorization.
+
+#### Evaluation of the Requirement
+
+Allowing a user to delete another user’s account solely after authentication is **a bad idea**. While authentication verifies that a user is who they claim to be, it does not ensure that the user has the appropriate permissions or rights to perform sensitive actions such as deleting accounts. This poses a significant security risk, as an authenticated user might have malicious intentions or could be an account that has been compromised.
+
+#### Importance of Authentication and Authorization
+
+- **Authentication**: This process confirms the identity of a user. It answers the question: "Are you who you say you are?" This usually involves verifying credentials like usernames and passwords.
+
+- **Authorization**: This process determines whether an authenticated user has the permission to perform a specific action. It answers the question: "Do you have permission to do this?" Even if a user is authenticated, they may not have the right to delete another user’s account.
+
+Separating these two concepts is crucial for maintaining security within applications. Proper authorization checks must be in place to ensure that only users with the appropriate roles (e.g., admins) can perform sensitive actions such as deleting user accounts.
+
+### Diagram
+
+To visualize the process of user deletion after authentication and authorization checks, see the diagram below:
+
+![Activity Diagram](./image.png)
+
 ```
 
 
